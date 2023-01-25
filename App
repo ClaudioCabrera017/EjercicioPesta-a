@@ -1,0 +1,18 @@
+import React, { useState } from 'react';
+import './App.css';
+import Pestañas from './Pestañas';
+import Pestañacaja from './Pestañacaja';
+
+function App() {
+  const [pestaña,setpestaña]=useState([])
+  console.log ( pestaña )
+
+  return (
+    <div className="App">
+      <Pestañas pestaña={pestaña} setpestaña={setpestaña}   />
+      <Pestañacaja  className="caja2" pest={pestaña}/>
+    </div>
+  );
+}
+
+export default App;
